@@ -217,7 +217,7 @@ class AppController extends BaseController
      **/
     protected function _createJsonApiResponse($data, $included = [], $pageObj = null)
     {
-        $this->loadComponent('Api2.JsonApi');
+        $this->loadComponent('RestApi.JsonApi');
 
         if (empty($data)) {
             $data = [];
