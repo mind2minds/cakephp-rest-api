@@ -1,0 +1,38 @@
+{
+  "name": "mind2minds/cakephp-rest-api",
+  "description": "CakePHP 3 plugin for building REST API services",
+  "type": "cakephp-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mind2minds",
+      "homepage": "http://www.mind2minds.com",
+      "role": "Author"
+    },
+    {
+      "name": "Community",
+      "homepage": "https://github.com/mind2minds/cakephp-rest-api/graphs/contributors"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/mind2minds/cakephp-rest-api/issues",
+    "source": "https://github.com/mind2minds/cakephp-rest-api"
+  },
+  "require": {
+    "cakephp/cakephp": "^3.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7|^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RestApi\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RestApi\\Test\\": "tests",
+      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+    }
+  }
+}
