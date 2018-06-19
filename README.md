@@ -99,7 +99,14 @@ You can define your logic in your action function as per your need. For above ex
 }
 ```
 
-The URL for above example will be `http://yourdomain.com/api/contacts`. You can customize it by setting the routes in `APP/config/routes.php`.
+The URL for above example will be `http://yourdomain.com/api/contacts`. You can customize it by setting the routes in `APP/config/routes.php`. Endpoint `/api/contacts` example is
+
+```php
+$routes->connect('/api/contacts', ['plugin' => 'RestApi', 'controller' => 'Demo', 'action' => 'contacts']);
+```
+
+Accept basic http authentication header
+e.g. `Basic NzQxZjNhOTctZTBjNC00OTFjLWI3MDItY2JlYTA5NzVmODhl` this is for default demo api key
 
 Its easy to use :)
 
